@@ -1,2 +1,2 @@
 # CSF111
-Computer Programming Course at BITS Pilani
+First Year Computer Programming Course at BITS Pilani
