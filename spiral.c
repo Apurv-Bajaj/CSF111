@@ -2,21 +2,15 @@
 
 int main(void)
 {
-printf("Enter the size(n): ");
-int n;
-scanf("%d",&n);
-int a[n][n];
-printf("Enter the elements: ");
-int i,j;
-for(i=0;i<n;i++)
-for(j=0;j<n;j++)
-scanf("%d",&a[i][j]);
+printf("This program will print an auto-filled array in spiral fashion.\nEnter rows and columns: ");
+int r,c;
+scanf("%d %d",&r,&c);
+int a[r][c];
+int i,j,k=1;
+for(i=0;i<r;i++)
+ for(j=0,;j<c;j++,k++)
+  a[i][j]=k;
 
-printf("The array is: \n");
-for(i=0;i<n;i++)
-{for(j=0;j<n;j++)
-printf("%d ",a[i][j]);
-printf("\n");
-}
-}
+
+
 

@@ -2,23 +2,36 @@
 
 int main(void)
 {
-printf("Enter the number of rows: ");
 int n;
+printf("Enter the number of elements: ");
 scanf("%d",&n);
-int i,j,r=n;
+int i,j,a[n];
 
-for(i=1;i<=n;i++)
-{
-for(j=1;j<=r;j++)
-printf("%d ",j);
+for(i=0;i<n;i++)
+ {
+  printf("Enter element %d (0 or 1): ",i+1);
+  scanf("%d",&a[i]);
+ } 
 
-for(j=1;j<i;j++)
-printf("    ");
-
-for(j=r;j>=1;j--)
-printf("%d ",j);
-r--;
-printf("\n");
+int k=0;
+for(i=0;i<n;i++)
+ {
+  if(a[i]==0) k++;
+ } 
+for(i=0;i<k;i++)
+ {
+  a[i]=0;
+ } 
+for(;i<n;i++)
+ {
+  a[i]=1;
+ } 
+for(i=0;i<n;i++)
+ {
+  printf("%d " ,a[i]);
+  
+ }
 }
-}
+ 
+
 
